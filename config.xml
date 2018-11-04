@@ -3,7 +3,7 @@
 	id = "com.mycompany.myphonegapappmuruganguha"
     versionCode = "12"
     version = "2.4"
-	android-versionCode="1030976"
+	android-versionCode="1030977"
 xmlns="http://www.w3.org/ns/widgets"
 xmlns:gap="http://phonegap.com/ns/1.0"
 	xmlns:android="http://schemas.android.com/apk/res/android"
@@ -23,10 +23,12 @@ xmlns:gap="http://phonegap.com/ns/1.0"
     <content src="index.html" />
     <access origin="*" />
 
-    
+
+    <preference name="phonegap-version" value="cli-7.1.0" />
+	
     <gap:plugin name="cordova-plugin-inappbrowser" source="npm" />
-	<preference name="android-targetSdkVersion" value="26"/>
-	<preference name="android-minSdkVersion" value="26"/> //android 3.0
+	<preference name="android-targetSdkVersion" value="27"/>
+	<preference name="android-minSdkVersion" value="27"/> //android 3.0
 
 	<gap:plugin name="cordova-android-support-gradle-release" source="npm" />
 
@@ -57,13 +59,13 @@ xmlns:gap="http://phonegap.com/ns/1.0"
     <preference name="android-minSdkVersion"      value="14" />              <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
     <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
 
-    <icon src="res/icon/icon.jpg" />
-		<!--
+    
+	
     <icon src="res/icon/android/icon-36.png"   gap:platform="android"    gap:qualifier="ldpi" />
     <icon src="res/icon/android/icon-48.png"   gap:platform="android"    gap:qualifier="mdpi" />
     <icon src="res/icon/android/icon-72.png"   gap:platform="android"    gap:qualifier="hdpi" />
     <icon src="res/icon/android/icon-96.png"  gap:platform="android"    gap:qualifier="xhdpi" />
-    
+    <!--
     <gap:splash src="res/screen/android/screen-ldpi-portrait.png"       gap:platform="android" gap:qualifier="port-ldpi" />
     <gap:splash src="res/screen/android/screen-mdpi-portrait.png"       gap:platform="android" gap:qualifier="port-mdpi" />
     <gap:splash src="res/screen/android/screen-hdpi-portrait.png"       gap:platform="android" gap:qualifier="port-hdpi" />
